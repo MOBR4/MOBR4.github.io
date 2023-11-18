@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohamed Berkat</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section id="profile"><br>
+      <div class="section__pic-container">
+        <img src="./assets/map.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohamed BERKAT</h1>
+        <p class="section__text__p2">Cybersecurity Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohamed-berkat-981528259'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/MOBR4/'"
+          />
+          <img
+            src="./assets/thm.png"
+            alt="My TryHackMe Profile"
+            class="icon"
+            onclick="location.href='https://tryhackme.com/p/Mobr4'"
+          />
+        </div><br><br>
+        <script src="https://tryhackme.com/badge/1170553"></script>
+
+
+      </div>
+    </section>
+    <section id="about"><br>
+      <h1 class="titles">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          
+          <div class="text-container">
+              <p>
+                I'm deeply passionate about cybersecurity, constantly exploring how to protect systems from 
+                attacks and strengthen their defenses. This website is where I share my thoughts on these 
+                topics. I enjoy finding ways to keep digital spaces safe, whether by understanding how hackers 
+                work or by building stronger security measures. I'm eager to contribute my skills to make our 
+                online world more secure and resilient.
+              </p>
+          </div>
+
+
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h2>Experience</h3><br>
+              <p> --> <strong>CTF</strong> player (Catch the Flag competitions)<br>  <br>--> <strong>Penetretion Tester</strong> (junior) <br><br> --> <strong>Website Developement</strong> <br><br> --><strong>Networking</strong> </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Education</h3><br>
+              <p>-->Mathematics Science Baccaloreat<br /><img style="height: 15px;"src="./assets/sahm.png" ><br>--><strong>CPGE</strong> Preparatory Classes <br><img style="height: 15px;"src="./assets/sahm.png" ><br> --><strong>ESI</strong> School of Information Sciences <br> <img style="height: 40px;margin-top: 10px;" src="./assets/esi.png"> </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience"><br>
+      <h1 class="titles">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Bash</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Powershell</h3>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Penetration Testing Tools</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Metasploit</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Burpesuite</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Hydra</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Gobuster</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Nmap</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Wireshark</h3>
+                </div>
+              </article>
+           
+            </div>
+
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Security Methodologies</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>OWASP </h3>
+                  <p>(Open Web Application Security Project)</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>NIST </h3>
+                  <p>Cybersecurity Framework</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>MITRE ATT&CK </h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3> Wazuh</h3>
+                  <p>Intrusion Detection Systems</p>
+                  
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Operating Systems and Platforms</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Windows Server</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Protocols and Incident Response</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>TCP/IP</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>SSH</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>HTTP/HTTPS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>SSL/TLS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>ARP</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>DNS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>OpenVPN</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>FTP</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <br>
+      <h1 class="titles">Latest Projects</h1>
+
+      
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <br>
+      <h1 class="titles">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:medbr@gmail.com">Medbr37@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mohamed-berkat-981528259'">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
