@@ -14,7 +14,6 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -33,7 +32,6 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -54,11 +52,11 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/CV Français English.pdf')"
+            onclick="window.open('./assets/CV Mohamed_BERKAT.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
@@ -67,7 +65,7 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mohamed-berkat-981528259'"
+            onclick="location.href='https://www.linkedin.com/in/mohamed-berkat-981528259/'"
           />
           <img
             src="./assets/github.png"
@@ -317,18 +315,57 @@
     </section>
 
     <section id="projects">
-      <br>
-      <h1 class="titles">Latest Projects</h1>
-
-      
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/image.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Network Intrusion Detection System (NIDS)</h2>
+            <div class="btn-container">
+              <p>Deploying Suricata on Ubuntu Server, our Network Intrusion Detection System (NIDS) safeguards networks against malicious activities. Suricata's real-time monitoring and rule-based detection ensure proactive threat mitigation. This project integrates seamlessly into Ubuntu Server environments, offering robust security measures for network protection.</p>
+              <!-- <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/momonaim/projects', '_blank')">
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/image2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Nagios Monitoring and Supervision System</h2>
+            <div class="btn-container">
+              <p>
+                Implementing Nagios on Ubuntu Server, our supervision system ensures continuous monitoring of network infrastructure and services. Nagios' comprehensive alerting and reporting capabilities provide real-time insights into system health and performance. This project offers proactive maintenance and troubleshooting, enhancing overall network reliability and security.
+              </p>
+              <!-- <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/momonaim/projects', '_blank')">
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/image3.png" alt="Project 3" class="project-img" />
+            </div>
+            <br><br><br>
+            <h2 class="experience-sub-title project-title">Ticket Management System</h2>
+            <div class="btn-container">
+              <p>Development of a ticket management system in Java with a particular focus on security, ensuring optimal handling of requests while protecting sensitive data. 
+                This project helped me know the logic behind websites and entreprise systems"</p>
+                
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
+
+
     <section id="contact">
       <br>
       <h1 class="titles">Contact Me</h1>
@@ -347,7 +384,8 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/mohamed-berkat-981528259'">LinkedIn</a></p>
+          <p><a href='https://www.linkedin.com/in/mohamed-berkat-981528259/'"
+            >LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -356,7 +394,6 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
