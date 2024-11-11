@@ -1,406 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohamed Berkat</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Professional portfolio for Mohamed BERKAT">
+    <meta name="keywords" content="Cybersecurity, Thesis, Reverse engeneering, Engineer,Maroc, Curriculum, CV, Mohamed BERKAT, Portfolio, Morocco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/alien.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//alien.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//alien.png">
+    <link rel="manifest" href="assets/favicon//site.webmanifest">
+    <title>Mohamed BERKAT | Portfolio</title>
+</head>
 
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">MOBR4</a>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Mohamed Berkat</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+            <!-- Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class="fas fa-home nav-link-icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="fas fa-user nav-link-icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class="fas fa-tools nav-link-icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class="fas fa-suitcase nav-link-icon"></i> Experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#articles" class="nav-link">
+                            <i class="fas fa-file-alt nav-link-icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope nav-link-icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="fas fa-times nav-close" id="nav-close"></i>
+            </div>
+            <div class="nav-btns">
+
+                <!-- Theme toggler -->
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Home section -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content grid">
+                    <div class="home-social">
+                        <a href="https://linkedin.com/in/mohamed-berkat" target="_blank" class="home-social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:mohamed.berkat@esi.ac.ma" class="home-social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/MOBR4" target="_blank" class="home-social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="home-img">
+                        <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Removed the mask and path elements, leaving only the image -->
+                            <image class="home-blob-img" x="12" y="18" xlink:href="img/map.png" />
+                        </svg>
+                    </div>
+                    
+                    <div class="home-data">
+                        <h1 class="home-data-title">Mohamed BERKAT</h1>
+                        <h3 class="home-data-subtitle">Cybersecurity & Cyberdefense</h3>
+                        <p class="home-data-description">Third-year cybersecurity student specializing in red teaming,
+                             forensics, and penetration testing, with a background in defensive security.</p>
+                        <a href="#contact" class="button button-flex">
+                            Contact Me <i class="fab fa-telegram-plane button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-scroll">
+                    <a href="#about" class="home-scroll-button button-flex">
+                        <span class="home-scroll-button-name">Scroll down</span>
+                        <i class="fas fa-arrow-down home-scroll-button-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">October , 2002</span>
+
+            <div class="about-container container grid">
+                <div class="about-container-img">
+                    <a href="https://research.utwente.nl/en/publications/a-journey-towards-responsive-and-circular-polymer-brushes-design-" target="_blank" title="Click to view the PhD publication" class="phd-link">
+                        <img src="img/what.jpg" alt="PhD visual asset (cover)." class="about-container-imgAlt">
+                    </a>
+                </div>
+
+                <div class="about-container-data">
+                    <p class="about-container-data-description">
+                        Passionate cybersecurity student specializing in penetration testing, vulnerability analysis,
+                         and malware analysis. Skilled in both offensive and defensive security tools, with a strong 
+                         foundation in security concepts. Currently focused on building expertise
+                          in penetration testing, vulnerability exploitation and trying to learn devsecops foundations
+                           to enhance overall security posture.</p>
+
+                    <div class="about-container-data-info">
+                        <div>
+                            <span class="about-container-data-info-title">3</span>
+                            <span class="about-container-data-name">Years of <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about-container-data-info-title">4</span>
+                            <span class="about-container-data-name">Spoken <br> languages</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a download="" href="assets/MariaBrioPerez-CV.pdf" class="button button-flex">
+                            Download CV <i class="fas fa-download button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Skills section -->
+<section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <span class="section-subtitle">A brief overview</span>
+
+    <div class="skills-container container grid">
+
+        <!-- Skills 1: Technical Expertise -->
+        <div class="skills-container-content skills-open">
+            <div class="skills-container-header">
+                <i class="fas fa-user-secret skills-icon"></i>
+
+                <div>
+                    <h1 class="skills-title">Penetration Testing</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Burp Suite</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Metasploit Framework</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Wireshark</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">ZAP, Hydra, John the Ripper</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Nmap/Nikto</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+        <!-- Skills 2: General Skills -->
+        <div class="skills-container-content skills-close">
+            <div class="skills-container-header">
+                <i class="fas fa-tools skills-icon"></i>
+
+                <div>
+                    <h1 class="skills-title">General Skills</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Web Penetration Testing</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Mobile Penetration Testing (Android)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Network Enumeration</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Vulnerability Assessment</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Reverse Engineering (Basic Knowledge)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
 
+        <!-- Skills 3: Security Management -->
+        <div class="skills-container-content skills-close">
+            <div class="skills-container-header">
+                <i class="fas fa-shield-alt skills-icon"></i>
 
-
-
-    <section id="profile"><br>
-      <div class="section__pic-container">
-        <img src="./assets/map.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mohamed BERKAT</h1>
-        <p class="section__text__p2">Cybersecurity Student</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cv-6.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
+                <div>
+                    <h1 class="skills-title">Security Management</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Frameworks & Standards: NIST, ISO 27001</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Basic Knowledge in Security Audits</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mohamed-berkat-981528259/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/MOBR4/'"
-          />
-          <img
-            src="./assets/thm.png"
-            alt="My TryHackMe Profile"
-            class="icon"
-            onclick="location.href='https://tryhackme.com/p/Mobr4'"
-          />
-        </div><br><br>
-        <script src="https://tryhackme.com/badge/1170553"></script>
 
+        <!-- Skills 4: Programming Languages -->
+        <div class="skills-container-content skills-close">
+            <div class="skills-container-header">
+                <i class="fas fa-code skills-icon"></i>
 
-      </div>
-    </section>
-    <section id="about"><br>
-      <h1 class="titles">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          
-          <div class="text-container">
-              <p>
-                I'm deeply passionate about cybersecurity, constantly exploring how to protect systems from 
-                attacks and strengthen their defenses. This website is where I share my thoughts on these 
-                topics. I enjoy finding ways to keep digital spaces safe, whether by understanding how hackers 
-                work or by building stronger security measures. I'm eager to contribute my skills to make our 
-                online world more secure and resilient.
-              </p>
-          </div>
-
-
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h2>Experience</h3><br>
-              <p> --> <strong>CTF</strong> player (Catch the Flag competitions)<br>  <br>--> <strong>Penetretion Tester</strong> (junior) <br><br> --> <strong>Website Developement</strong> <br><br> --><strong>Networking</strong> </p>
+                <div>
+                    <h1 class="skills-title">Programming Languages</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
             </div>
-
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h2>Education</h3><br>
-              <p>-->Mathematics Science Baccaloreat<br /><img style="height: 15px;"src="./assets/sahm.png" ><br>--><strong>CPGE</strong> Preparatory Classes <br><img style="height: 15px;"src="./assets/sahm.png" ><br> --><strong>ESI</strong> School of Information Sciences <br> <img style="height: 40px;margin-top: 10px;" src="./assets/esi.png"> </p>
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Python (Scripting & Exploit Development)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Bash (Automation)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Assembly (x86)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">C/C++ (Exploit Development)</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">JavaScript</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience"><br>
-      <h1 class="titles">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <div>
-                  <h3>Python</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>C</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Bash</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>PHP</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Powershell</h3>
-                </div>
-              </article>
 
+        <!-- Skills 5: Systems & Environments -->
+        <div class="skills-container-content skills-close">
+            <div class="skills-container-header">
+                <i class="fas fa-desktop skills-icon"></i>
 
+                <div>
+                    <h1 class="skills-title">Systems & Environments</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Penetration Testing Tools</h2>
-            <div class="article-container">
-              <article>
-                <div>
-                  <h3>Metasploit</h3>
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Operating Systems: Linux (Kali/ParrotOS), Windows Server, Active Directory</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Burpesuite</h3>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Virtualization: VMware, VirtualBox</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Hydra</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Gobuster</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Nmap</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Wireshark</h3>
-                </div>
-              </article>
-           
             </div>
-
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Security Methodologies</h2>
-            <div class="article-container">
-              <article>
-                <div>
-                  <h3>OWASP </h3>
-                  <p>(Open Web Application Security Project)</p>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>NIST </h3>
-                  <p>Cybersecurity Framework</p>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>MITRE ATT&CK </h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3> Wazuh</h3>
-                  <p>Intrusion Detection Systems</p>
-                  
-                </div>
-              </article>
-
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Operating Systems and Platforms</h2>
-            <div class="article-container">
-              <article>
-                <div>
-                  <h3>Linux</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>Windows Server</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Protocols and Incident Response</h2>
-            <div class="article-container">
-              <article>
-                <div>
-                  <h3>TCP/IP</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>SSH</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>HTTP/HTTPS</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>SSL/TLS</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>ARP</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>DNS</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>OpenVPN</h3>
-                </div>
-              </article>
-              <article>
-                <div>
-                  <h3>FTP</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div><br><br><br>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/image.png" alt="Project 1" class="project-img" />
+        <!-- Skills 6: Networks & Protocols -->
+        <div class="skills-container-content skills-close">
+            <div class="skills-container-header">
+                <i class="fas fa-network-wired skills-icon"></i>
+
+                <div>
+                    <h1 class="skills-title">Networks & Protocols</h1>
+                </div>
+                <i class="fas fa-angle-down skills-arrow"></i>
             </div>
-            <h2 class="experience-sub-title project-title">Network Intrusion Detection System (NIDS)</h2>
-            <div class="btn-container">
-              <p>Deploying Suricata on Ubuntu Server, our Network Intrusion Detection System (NIDS) safeguards networks against malicious activities. Suricata's real-time monitoring and rule-based detection ensure proactive threat mitigation. This project integrates seamlessly into Ubuntu Server environments, offering robust security measures for network protection.</p>
-              <!-- <button class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/momonaim/projects', '_blank')">
-                Live Demo
-              </button> -->
+            <div class="skills-list grid">
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">TCP/IP, HTTP/S, FTP, SSH</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-titles">
+                        <h3 class="skills-name">Network Protocol Analysis</h3>
+                    </div>
+                    <div class="skills-bar">
+                        <span class="skills-percentage skills-polymer"></span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/image2.png" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Nagios Monitoring and Supervision System</h2>
-            <div class="btn-container">
-              <p>
-                Implementing Nagios on Ubuntu Server, our supervision system ensures continuous monitoring of network infrastructure and services. Nagios' comprehensive alerting and reporting capabilities provide real-time insights into system health and performance. This project offers proactive maintenance and troubleshooting, enhancing overall network reliability and security.
-              </p>
-              <!-- <button class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/momonaim/projects', '_blank')">
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/image3.png" alt="Project 3" class="project-img" />
-            </div>
-            <br><br><br>
-            <h2 class="experience-sub-title project-title">Ticket Management System</h2>
-            <div class="btn-container">
-              <p>Development of a ticket management system in Java with a particular focus on security, ensuring optimal handling of requests while protecting sensitive data. 
-                This project helped me know the logic behind websites and entreprise systems"</p>
-                
-             
-            </div>
-          </div>
         </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
+
+    </div>
+</section>
 
 
-    <section id="contact">
-      <br>
-      <h1 class="titles">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:medbr@gmail.com">Medbr37@gmail.com</a></p>
+<!-- Experience section -->
+<section class="experience section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <span class="section-subtitle">Professional journey</span>
+
+    <div class="experience-container container">
+        <div class="experience-tabs">
+            <div class="experience-tabs-button button-flex experience-active" data-target="#education" onclick="switchTab(event)">
+                <i class="fas fa-graduation-cap experience-icon"></i>
+                Education
+            </div>
+            <div class="experience-tabs-button button-flex" data-target="#work" onclick="switchTab(event)">
+                <i class="fas fa-briefcase experience-icon"></i>
+                Work
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href='https://www.linkedin.com/in/mohamed-berkat-981528259/'"
-            >LinkedIn</a></p>
+        <div class="experience-sections">
+            <!-- Experience section 1: Education -->
+            <div class="experience-content experience-active" data-content id="education">
+                <div class="experience-data">
+                    <div class="experience-data-alt">
+                        <h3 class="experience-title">Cycle d’Ingénieur en Sécurité des Systèmes d’Information et Cyberdéfense</h3>
+                        <span class="experience-subtitle">Ecole de science de l’information (ESI), Rabat, Maroc</span>
+                        <div class="experience-calendar">
+                            <i class="fas fa-calendar-alt"></i>
+                            2022 - 2025
+                        </div>
+                    </div>
+                    <div>
+                        <span class="experience-rounder"></span>
+                        <span class="experience-line"></span>
+                    </div>
+                </div>
+                <div class="experience-data">
+                    <div></div>
+                    <div>
+                        <span class="experience-rounder"></span>
+                    </div>
+                    <div class="experience-data-alt">
+                        <h3 class="experience-title">Classes préparatoires en mathématique et physique MPSI/MP</h3>
+                        <span class="experience-subtitle">CPGE Omar Ibn Abdelaziz, Oujda, Maroc</span>
+                        <div class="experience-calendar">
+                            <i class="fas fa-calendar-alt"></i>
+                            2020 - 2022
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience content 2: Work -->
+            <div class="experience-content" data-content id="work">
+                <div class="experience-data">
+                    <div class="experience-data-alt">
+                        <h3 class="experience-title">N1 SOC Analyst Intern</h3>
+                        <span class="experience-subtitle">LMPS GROUP, Casablanca, Maroc</span>
+                        <div class="experience-calendar">
+                            <i class="fas fa-calendar-alt"></i>
+                            Juillet 2024 - Aout 2024
+                        </div>
+                    </div>
+                    <div>
+                        <span class="experience-rounder"></span>
+                        <span class="experience-line"></span>
+                    </div>
+                </div>
+                <div class="experience-data">
+                    <div></div>
+                    <div>
+                        <span class="experience-rounder"></span>
+                        <span class="experience-line"></span>
+                    </div>
+                    <div class="experience-data-alt">
+                        <h3 class="experience-title">Full Stack Dev Intern</h3>
+                        <span class="experience-subtitle">AdelphaTech SERVICES, Rabat, Maroc</span>
+                        <div class="experience-calendar">
+                            <i class="fas fa-calendar-alt"></i>
+                            Juillet 2023 - Aout 2023
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    </div>
+</section>
+
+
+        <!-- Articles section -->
+        <section class="articles section" id="articles">
+            <h2 class="section-title">Projects</h2>
+            <span class="section-subtitle">Most recent work</span>
+
+            <div class="articles-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Articles section: first element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-1.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Design and Implementation of a SIEM Based on ELK Stack and Wazuh for Cyber Threat Management </h3>
+                            <p class="articles-description">Simulation of realistic scenarios for data collection, incident analysis, and threat response. | 2024, July</p>
+                            <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202316201" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Articles section: second element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-2.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Web Application Pentesting</h3>
+                            <p class="articles-description">Testing vulnerable web applications (DVWA, BWAPP, and Juice Shop), exploiting vulnerabilities 
+                                such as SQL Injection, XSS, and CSRF, with the creation of detailed reports.</p>
+                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acs.langmuir.3c03683" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Articles section: third element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-3.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Android Application Pentesting</h3>
+                            <p class="articles-description">Setting up an Android test environment with Genymotion, Drozer, and Jadx to analyze and exploit
+                                 vulnerabilities in applications, while drafting reports on these vulnerabilities and securing steps.</p>
+                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acsapm.3c02397" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Articles section: third element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-3.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Static and Dynamic Analysis of the Zeus Trojan (Malware Analysis)</h3>
+                            <p class="articles-description">Detailed analysis of the functioning of the Zeus Trojan, including its network behavior and evasion techniques.</p>
+                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acsapm.3c02397" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Articles section: third element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-3.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Shellcode Development for Exploitation</h3>
+                            <p class="articles-description">Creating shellcodes to inject malicious code into remote processes by exploiting vulnerabilities.</p>
+                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acsapm.3c02397" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Articles section: third element -->
+                    <div class="articles-content grid swiper-slide">
+                        <img src="img/article-3.png" alt="Articles" class="article-img">
+                        <div class="articles-data">
+                            <h3 class="articles-title">Deployment of a NIDS (Network Intrusion Detection System) with Suricata</h3>
+                            <p class="articles-description">Enhancing security and detecting potential threats in the network environment.</p>
+                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acsapm.3c02397" class="button button-flex button-small articles-button">
+                                Read <i class="fas fa-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-angle-right swiper-articles-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-angle-left swiper-articles-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+       <!-- Contact section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <span class="section-subtitle">Let's get in touch</span>
+
+            <div class="contact-container container grid">
+                <div class="contact-items">
+                    <div class="contact-information">
+                        <div class="contact-details">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div></div>
+                            <span class="contact-subtitle">Rabat, Morocco</span>
+                        </div>
+                    </div>
+                    <div class="contact-information">
+                        <div class="contact-details">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div></div>
+                            <span class="contact-subtitle">+212 600 088 216</span>
+                        </div>  
+                    </div>
+                    <div class="contact-information">
+                        <div class="contact-details">
+                            <i class="far fa-envelope contact-icon"></i>
+                            <div></div>
+                            <span class="contact-subtitle">mohamed.berkat@esi.ac.ma</span>
+                        </div>
+                    </div>
+                </div>
+               
+                                                  
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div class="footer-texts">
+                    <h1 class="footer-title">Mohamed Berkat</h1>
+                    <span class="footer-subtitle">Cybersecurity & Cyberdefense</span>
+                </div>
+                <!-- Social links -->
+                <ul class="footer-links">
+                    <li>
+                        <a href="#experience" class="footer-link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#articles" class="footer-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer-link">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/mohamed-berkat/" target="_blank">
+                        <i class="fab fa-linkedin-in footer-social"></i>
+                    </a>
+
+                </div>
+            </div>
+ 
         </div>
-      </nav>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Scroll & scripts -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+
+    <script src="https://kit.fontawesome.com/027d3564f6.js" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-37EJ20Q4NN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-37EJ20Q4NN');
+    </script>
+    </body>
 </html>
